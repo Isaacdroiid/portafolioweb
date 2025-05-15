@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="icon" href="Icon/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="home">
+        <img id="logo" src="Icon/logo.png" alt="logo">
+        <h1>Portafolio Web</h1>
+        <hr>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#sobremi">Sobre Mí</a></li>
+            <li><a href="#logros">Logros</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>            
+            <li><a href="#footer">Fin de página</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <article>
+            <h2>Bienvenidos a mi portafolio web</h2>
+            <p>Bienvenidos, soy Isaac Zambrano. Esta página web será una breve presentación sobre mi persona y mis habilidades en el desarrollo web, usando HTML.</p>
+        </article>
+
+        <!-- Sección sobre mí -->
+        <section id="sobremi">
+            <article>
+                <h2>Sobre Mí</h2>
+                <p>
+                    Hola, soy un estudiante de <mark>Ingeniería en Sistemas de Información.</mark> Actualmente curso el tercer nivel en la materia de <em>Desarrollo Basado en Plataformas</em>. Vengo de la <strong>Universidad Estatal de Milagro (UNEMI)</strong> y he homologado a la carrera de <em>Sistemas de la Información</em> en la <strong>Universidad Técnica de Babahoyo (UTB)</strong>. Estoy muy contento de mejorar mis habilidades en desarrollo web, tanto en HTML como en CSS.
+                </p>
+                <p>Una imagen mía, para hacerme conocer:</p>
+                <img src="Icon/Yo.jpeg" alt="Yo">
+            </article>
+        </section>
+
+        <!-- Sección de logros -->
+        <article id="logros">
+            <h2>Logros</h2>
+            <p>Mis logros son los siguientes:</p>
+            <ul>
+                <li>Abanderado del colegio</li>
+                <li>Inicialización de mi emprendimiento</li>
+                <li>He aprendido más de un instrumento</li>
+            </ul>
+        </article>
+
+        <!-- Tabla de habilidades -->
+        <article id="habilidades">
+            <h2>Habilidades</h2>
+            <p>Puedo decir que mis habilidades son:</p>
+            <table border="1">
+                <thead>
+                    <tr><th>Nombre de Habilidad</th><th>Descripción</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Compromiso laboral</td>
+                        <td>Disfruto del trabajo y me esfuerzo por cumplir con responsabilidad y dedicación en cada tarea que realizo.</td>
+                    </tr> 
+                    <tr>
+                        <td>Talento musical</td>
+                        <td>Poseo habilidades en la interpretación de instrumentos musicales, lo que demuestra creatividad, disciplina y sensibilidad artística.</td>
+                    </tr>   
+                    <tr>
+                        <td>Interés en la programación</td>
+                        <td>Me apasiona el mundo de la tecnología y tengo afinidad por la programación, lo que me impulsa a seguir aprendiendo y desarrollando soluciones digitales.</td>
+                    </tr>                                                                                
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Estas habilidades reflejan mi compromiso con el aprendizaje continuo, mi capacidad para combinar creatividad y lógica, y mi disposición para asumir responsabilidades con entusiasmo.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <!-- Multimedia -->
+        <article>
+            <h2>Audio</h2>
+            <audio controls src="Audio/Audio Presentacion.mp3">Tu navegador no soporta el elemento de audio.</audio>
+        </article>
+
+        <!-- Formulario -->
+        <form action="">
+            <fieldset>
+                <legend>Formulario</legend>
+
+                <!-- Campo para nombres -->
+                <label for="txtNombre">Nombres:</label><br>
+                <input type="text" id="txtNombre" name="txtNombre" placeholder="Ej: Isaac Nehemías" required><br><br>
+
+                <!-- Campo para apellidos -->
+                <label for="txtApellidos">Apellidos:</label><br>
+                <input type="text" id="txtApellidos" name="txtApellidos" placeholder="Ej: Zambrano Anchundia" required><br><br>
+
+                <!-- Correo -->
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="Ej: correo@example.com" required><br><br>
+
+                <!-- Edad -->
+                <label for="dateNacimiento">Fecha de Nacimiento:</label><br>
+                <input type="date" id="dateNacimiento" name="dateNacimiento" required><br><br>
+
+                <!-- Color favorito -->
+                <label for="color">Color Favorito:</label>
+                <input type="color" id="color" name="color"><br><br>
+
+                <!-- Género -->
+                <label>Género:</label><br>
+                <input type="radio" id="masculino" name="genero" value="Masculino" checked required>
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="femenino" name="genero" value="Femenino">
+                <label for="femenino">Femenino</label><br><br>
+
+                <!-- Intereses -->
+                <label for="interes">Intereses:</label><br>
+                <textarea id="interes" name="interes" rows="4" cols="50" placeholder="Ej: Me interesa aprender Java"></textarea><br><br>
+
+                <!-- Comentarios -->
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Ej: Excelente Portafolio Web"></textarea><br><br>
+            </fieldset>
+
+            <!-- Botones -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </form>
+        <hr>
+        <!-- Botón para regresar al inicio -->
+        <a href="#home"><button>Inicio</button></a>
+    </main>
+    <!-- Pie de página -->
+    <footer id="footer">
+        &copy; 2025: Isaac Nehemías Zambrano Anchundia
+    </footer>
+</body>
+</html>
