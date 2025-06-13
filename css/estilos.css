@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@200..700&family=Roboto:wght@400;700&family=Work+Sans&display=swap');
+
+* {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.head {
+    background-color: rgb(233, 229, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.home {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#logo {
+    width: 80px;
+    border-radius: 10%;
+}
+
+#titulo {
+    font-size: 2rem;
+    color: #222;
+}
+
+nav {
+    background-color: white;
+    border-radius: 15px;
+    width: 70%;
+    padding: 15px 30px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav1 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav1 li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav1 li a:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+article, section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#yo {
+    display: block;
+    margin: 15px auto;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot td {
+    font-style: italic;
+    background-color: #f9f9f9;
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+input[type="color"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: #444;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(233, 229, 229);
+    margin-top: 40px;
+    font-weight: bold;
+}
+ 
+
+/* Diseño responsivo */
+@media screen and (max-width: 1024px) {
+    nav {
+        width: 80%;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 70px;
+    }
+
+    #titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    table, th, td {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 90%;
+        padding: 10px 20px;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #yo {
+        width: 200px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #titulo {
+        font-size: 1.5rem;
+    }
+
+    #logo {
+        width: 60px;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea,
+    input[type="color"] {
+        font-size: 0.9rem;
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    table, th, td {
+        font-size: 0.85rem;
+    }
+}
